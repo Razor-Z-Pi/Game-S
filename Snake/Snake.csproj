@@ -43,6 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Figura.cs" />
     <Compile Include="VerticalLines.cs" />
     <Compile Include="HorizontalLines.cs" />
     <Compile Include="Point.cs" />

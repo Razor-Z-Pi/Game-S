@@ -6,36 +6,15 @@ using System.Threading.Tasks;
 
 namespace Snake
 {
-    class HorizontalLines
+    class HorizontalLines : Figura
     {
-        List<Point> stena;
-        Random rz;
-
-        public HorizontalLines(int xLeft, int xRigth, int y , char point)
+        public HorizontalLines(int xLeft, int xRigth, int y, char point)
         {
-            rz = new Random();
-            int i,s = 0;
-            i = rz.Next(10, 20);
-            while (i > s)
-            { 
-                stena = new List<Point>();
-                xLeft = rz.Next(1,8);
-                xRigth = rz.Next(8,11);
-                y = rz.Next(1, 8);
-                for (int x = xLeft; x <= xRigth; x++)
-                {
-                    Point p = new Point(x,y,point);
-                    stena.Add(p);
-                }
-                s++;
-            }
-        }
-
-        public void Sten()
-        {
-            foreach (Point i in stena)
+            stena = new List<Point>();
+            for (int x = xLeft; x <= xRigth; x++)
             {
-                i.Draw();
+                Point p = new Point(x, y, point);
+                stena.Add(p);
             }
         }
     }

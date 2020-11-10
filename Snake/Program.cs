@@ -12,10 +12,20 @@ namespace Snake
         {
             Console.Title = "Snake";
 
-            HorizontalLines stena = new HorizontalLines(5,10,8,'*');
-            stena.Sten();
-            VerticalLines stenaV = new VerticalLines(0,0,0,'*');
-            stenaV.stenaG();
+            HorizontalLines Left1 = new HorizontalLines(0, 78, 0, '+');
+            HorizontalLines Left2 = new HorizontalLines(0, 78, 24, '+');
+            VerticalLines Up = new VerticalLines(0, 24, 0, '+');
+            VerticalLines Up1 = new VerticalLines(0, 24, 78, '+');
+
+            HorizontalLines sten1 = new HorizontalLines(15, 20, 18, '+');
+            VerticalLines sten2 = new VerticalLines(6, 15, 20, '+');
+
+            Left1.Sten();
+            Left2.Sten();
+            Up.Sten();
+            Up1.Sten();
+            sten1.Sten();
+            sten2.Sten();
 
             Console.ReadKey();
         }
