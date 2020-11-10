@@ -12,23 +12,12 @@ namespace Snake
         {
             Console.Title = "Snake";
 
-            Point p1 = new Point(1,4,'*');
-            Point p2 = new Point(5,8,'#');
-            Point p3 = new Point(9, 10, '&');
-            Point p4 = new Point(15, 18, '$');
-            Point p5 = new Point(20, 24, '@');
+            HorizontalLines stena = new HorizontalLines(5,10,8,'*');
+            stena.Sten();
+            VerticalLines stenaV = new VerticalLines(0,0,0,'*');
+            stenaV.stenaG();
 
             Console.ReadKey();
-
-            List<Point> newList = new List<Point>();
-            newList.Add(p3);
-            newList.Add(p4);
-            newList.Add(p5);
-
-            foreach (Point i in newList)
-            {
-                Console.WriteLine(i);
-            }
         }
     }
 }
