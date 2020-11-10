@@ -12,17 +12,11 @@ namespace Snake
         {
             Console.Title = "Snake";
 
-            Point p1 = new Point();
-            p1.x = 1;
-            p1.y = 4;
-            p1.point = '*';
+            Point p1 = new Point(1,4,'*');
 
             p1.Draw();
 
-            Point p2 = new Point();
-            p2.x = 6;
-            p2.y = 8;
-            p2.point = '#';
+            Point p2 = new Point(5,8,'#');
 
             p2.Draw();
 
