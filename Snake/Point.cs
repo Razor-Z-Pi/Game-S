@@ -21,6 +21,7 @@ namespace Snake
             x = _x;
             y = _y;
             point = _point;
+            Draw();
         }
 
         public void Draw()
