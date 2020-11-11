@@ -45,6 +45,7 @@
   <ItemGroup>
     <Compile Include="Direction.cs" />
     <Compile Include="Figura.cs" />
+    <Compile Include="foodCreator.cs" />
     <Compile Include="Snake.cs" />
     <Compile Include="VerticalLines.cs" />
     <Compile Include="HorizontalLines.cs" />
